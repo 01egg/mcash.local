@@ -493,14 +493,22 @@ h4 {
 }
 
 /* line 31, style.scss */
+h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #4c4c4c;
+}
+
+/* line 38, style.scss */
 .hdr-content p {
   font-family: 'Roboto', sans-serif;
   font-size: 21px;
   font-weight: 500;
 }
 
-/* line 37, style.scss */
-.features_row_p {
+/* line 44, style.scss */
+.row_p {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -509,23 +517,48 @@ h4 {
   text-align: center;
 }
 
-/* line 52, style.scss */
+/* line 53, style.scss */
+.h4_descriptor {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* line 59, style.scss */
+.h5-descriptor {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4c4c4c;
+}
+
+/* line 66, style.scss */
 .button-menu {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-/* line 57, style.scss */
+/* line 71, style.scss */
 p {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 93, style.scss */
+/* line 75, style.scss */
+#features, .how-works_ttl {
+  margin: 6.2em 0 0 0;
+}
+
+/* line 111, style.scss */
+.change-bg {
+  background-color: #f9f7f7;
+}
+
+/* line 118, style.scss */
 .nav-item a {
   color: #666666 !important;
 }
 
-/* line 97, style.scss */
+/* line 122, style.scss */
 li .btn-outline-primary {
   color: #3f72af !important;
   border-color: #666666 !important;
@@ -533,7 +566,7 @@ li .btn-outline-primary {
   border-radius: .45rem !important;
 }
 
-/* line 104, style.scss */
+/* line 129, style.scss */
 .btn-outline-primary:hover {
   background-color: rgba(102, 102, 102, 0.5) !important;
   color: #fff !important;
@@ -541,7 +574,7 @@ li .btn-outline-primary {
   transition: all .2s;
 }
 
-/* line 110, style.scss */
+/* line 135, style.scss */
 .hover-effect::before {
   content: '';
   display: block;
@@ -554,28 +587,23 @@ li .btn-outline-primary {
   transition: all .3s;
 }
 
-/* line 120, style.scss */
+/* line 145, style.scss */
 .hover-effect:hover::before {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-/* line 126, style.scss */
-#menu {
-  background-color: #f9f7f7;
-}
-
-/* line 130, style.scss */
+/* line 151, style.scss */
 .hdr-content {
   margin: 7em 0 0 0;
 }
 
-/* line 134, style.scss */
+/* line 155, style.scss */
 .hdr-content-ttl {
   margin: 5em 0 0 0;
 }
 
-/* line 144, style.scss */
+/* line 165, style.scss */
 .form-group input {
   border: none;
   background-color: #dbe2ef;
@@ -583,7 +611,7 @@ li .btn-outline-primary {
   height: 3em;
 }
 
-/* line 151, style.scss */
+/* line 172, style.scss */
 .form-group button {
   padding: .6em 3.5em;
   border-radius: 2rem;
@@ -591,7 +619,7 @@ li .btn-outline-primary {
   border: 2px #3f72af !important solid !important;
 }
 
-/* line 158, style.scss */
+/* line 179, style.scss */
 .form-group button:hover {
   background-color: rgba(102, 102, 102, 0.5) !important;
   color: #fff !important;
@@ -599,12 +627,12 @@ li .btn-outline-primary {
   transition: all .2s;
 }
 
-/* line 164, style.scss */
+/* line 185, style.scss */
 .hdr_form {
   margin-bottom: 4.6em;
 }
 
-/* line 170, style.scss */
+/* line 191, style.scss */
 .hdr-pic {
   background-color: #dbe2ef;
   height: 36em;
@@ -612,25 +640,33 @@ li .btn-outline-primary {
   right: 0;
 }
 
-/* line 177, style.scss */
+/* line 198, style.scss */
 .bg-picture {
   position: relative;
   top: 10.8em;
 }
 
-/* line 186, style.scss */
-#features {
-  margin: 6.2em 0 0 0;
-}
-
-/* line 190, style.scss */
-.features_row_ttl h3:after {
+/* line 211, style.scss */
+.row_ttl h3:after {
   content: '';
   display: block;
   width: 5%;
   background-color: #3f72af !important;
   height: 1px;
   margin: .4em auto;
+}
+
+/* line 226, style.scss */
+.features_row_cont {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  margin: 3em 0 6em 0;
+}
+
+/* line 231, style.scss */
+.features_row_cont div {
+  margin: 2em auto;
+  padding: 0 2.6em;
 }
 
 /*# sourceMappingURL=style.css.map */

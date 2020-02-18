@@ -28,6 +28,13 @@
     font-weight: 500;
 }
 
+%h5-style{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #4c4c4c;
+}
+
 %h1-descriptor{
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
@@ -49,6 +56,13 @@
     font-weight: 500;
 }
 
+%h5-descriptor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4c4c4c;
+}
+
 %button-menu{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -58,6 +72,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
+%ttls-top-margins{
+    margin: 6.2em 0 0 0;
+}
 // Peremennye
 
 $color-prim: #3f72af !important;
@@ -79,12 +96,20 @@ h4 {
     @extend %h4-style;
 }
 
+h5{
+    @extend %h5-style;
+}
+
 p{
     @extend %p-style;
 }
 
 .button-menu{
     @extend %button-menu;
+}
+
+.change-bg{
+    background-color: #f9f7f7;
 }
 
 // !!!***---HEADER---***!!!
@@ -122,10 +147,6 @@ li .btn-outline-primary{
     }
 
 // Content
-
-#menu{
-    background-color: #f9f7f7;
-}
 
 .hdr-content{
     margin: 7em 0 0 0;
@@ -184,10 +205,10 @@ li .btn-outline-primary{
 // Titles
 
 #features{
-    margin: 6.2em 0 0 0;
+    @extend %ttls-top-margins;
 }
 
-.features_row_ttl h3:after{
+.row_ttl h3:after{
     content:'';
     display: block;
     width: 5%;
@@ -196,8 +217,36 @@ li .btn-outline-primary{
     margin: .4em auto;
 }
 
-.features_row_p{
+.row_p{
     @extend %h3-descriptor;
 }
 
+// Content
 
+.features_row_cont{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    margin: 3em 0 6em 0;
+}
+
+.features_row_cont div{
+    margin: 2em auto;
+    padding: 0 2.6em;
+}
+
+.h4_descriptor{
+    @extend %h4-descriptor;
+}
+
+// !!!***---HOW IT WORKS---***!!!
+
+// Titles
+
+.how-works_ttl{
+    @extend %ttls-top-margins;
+}
+
+// Content
+
+.h5-descriptor{
+    @extend %h5-descriptor;
+}
