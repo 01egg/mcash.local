@@ -462,4 +462,175 @@ template {
 [hidden] {
   display: none;
 }
+
+/* line 5, style.scss */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/* line 11, style.scss */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+/* line 17, style.scss */
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #112d4e;
+}
+
+/* line 25, style.scss */
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* line 31, style.scss */
+.hdr-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+/* line 37, style.scss */
+.features_row_p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #4c4c4c;
+  text-align: center;
+}
+
+/* line 52, style.scss */
+.button-menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* line 57, style.scss */
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 93, style.scss */
+.nav-item a {
+  color: #666666 !important;
+}
+
+/* line 97, style.scss */
+li .btn-outline-primary {
+  color: #3f72af !important;
+  border-color: #666666 !important;
+  padding: .6em 1.8em;
+  border-radius: .45rem !important;
+}
+
+/* line 104, style.scss */
+.btn-outline-primary:hover {
+  background-color: rgba(102, 102, 102, 0.5) !important;
+  color: #fff !important;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* line 110, style.scss */
+.hover-effect::before {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: #ccc;
+  height: 1px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/* line 120, style.scss */
+.hover-effect:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* line 126, style.scss */
+#menu {
+  background-color: #f9f7f7;
+}
+
+/* line 130, style.scss */
+.hdr-content {
+  margin: 7em 0 0 0;
+}
+
+/* line 134, style.scss */
+.hdr-content-ttl {
+  margin: 5em 0 0 0;
+}
+
+/* line 144, style.scss */
+.form-group input {
+  border: none;
+  background-color: #dbe2ef;
+  border-radius: 2rem;
+  height: 3em;
+}
+
+/* line 151, style.scss */
+.form-group button {
+  padding: .6em 3.5em;
+  border-radius: 2rem;
+  background-color: #3f72af !important;
+  border: 2px #3f72af !important solid !important;
+}
+
+/* line 158, style.scss */
+.form-group button:hover {
+  background-color: rgba(102, 102, 102, 0.5) !important;
+  color: #fff !important;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* line 164, style.scss */
+.hdr_form {
+  margin-bottom: 4.6em;
+}
+
+/* line 170, style.scss */
+.hdr-pic {
+  background-color: #dbe2ef;
+  height: 36em;
+  position: absolute;
+  right: 0;
+}
+
+/* line 177, style.scss */
+.bg-picture {
+  position: relative;
+  top: 10.8em;
+}
+
+/* line 186, style.scss */
+#features {
+  margin: 6.2em 0 0 0;
+}
+
+/* line 190, style.scss */
+.features_row_ttl h3:after {
+  content: '';
+  display: block;
+  width: 5%;
+  background-color: #3f72af !important;
+  height: 1px;
+  margin: .4em auto;
+}
+
 /*# sourceMappingURL=style.css.map */

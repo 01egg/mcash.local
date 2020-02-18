@@ -1,1 +1,203 @@
+// IMPORTS
 @import 'reset';
+
+// EXTENDS
+%h1-style{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+%h2-style{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+%h3-style{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #112d4e;
+}
+
+
+%h4-style{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+%h1-descriptor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+%h3-descriptor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #4c4c4c;
+    text-align: center;
+}
+
+%h4-descriptor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+%button-menu{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+%p-style{
+    font-family: 'Roboto', sans-serif;
+}
+
+// Peremennye
+
+$color-prim: #3f72af !important;
+
+// GENERAL STYLES
+h1 {
+    @extend %h1-style;
+}
+
+h2 {
+    @extend %h2-style;
+}
+
+h3 {
+    @extend %h3-style;
+}
+
+h4 {
+    @extend %h4-style;
+}
+
+p{
+    @extend %p-style;
+}
+
+.button-menu{
+    @extend %button-menu;
+}
+
+// !!!***---HEADER---***!!!
+
+// menu
+.nav-item a{
+    color:  #666666 !important;
+}
+
+li .btn-outline-primary{
+    color: $color-prim;
+    border-color:#666666 !important;
+    padding: .6em 1.8em;
+    border-radius: .45rem !important;
+}
+
+.btn-outline-primary:hover{
+    background-color: rgba(40%, 40%, 40%, .5) !important;
+    color: #fff !important;
+    transition: all .2s;
+}
+
+.hover-effect::before{
+    content:'';
+    display: block;
+    width: 100%;
+    background-color: #ccc;
+    height: 1px;
+    transform: scale(0); 
+    transition: all .3s;
+    }
+    
+.hover-effect:hover::before{
+    transform: scale(1); 
+    }
+
+// Content
+
+#menu{
+    background-color: #f9f7f7;
+}
+
+.hdr-content{
+    margin: 7em 0 0 0;
+}
+
+.hdr-content-ttl{
+    margin: 5em 0 0 0;
+}
+
+.hdr-content p{
+    @extend %h1-descriptor;
+}
+
+// Form
+
+.form-group input{
+    border: none;
+    background-color:#dbe2ef;
+    border-radius: 2rem;
+    height: 3em;
+}
+
+.form-group button{
+    padding: .6em 3.5em;
+    border-radius: 2rem;
+    background-color: $color-prim;
+    border: 2px $color-prim solid !important;
+}
+
+.form-group button:hover{
+    background-color: rgba(40%, 40%, 40%, .5) !important;
+    color: #fff !important;
+    transition: all .2s;
+}
+
+.hdr_form{
+    margin-bottom: 4.6em;
+}
+
+// Picture
+
+.hdr-pic{
+    background-color: #dbe2ef;
+    height: 36em;
+    position: absolute;
+    right: 0;
+}
+
+.bg-picture {
+    position: relative;
+    top: 10.8em;
+}
+
+// !!!***---FEATURES---***!!!
+
+// Titles
+
+#features{
+    margin: 6.2em 0 0 0;
+}
+
+.features_row_ttl h3:after{
+    content:'';
+    display: block;
+    width: 5%;
+    background-color: $color-prim;
+    height: 1px;
+    margin: .4em auto;
+}
+
+.features_row_p{
+    @extend %h3-descriptor;
+}
+
+
