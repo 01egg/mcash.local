@@ -463,21 +463,22 @@ template {
   display: none;
 }
 
-/* line 5, style.scss */
+/* line 8, style.scss */
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 600;
 }
 
-/* line 11, style.scss */
+/* line 14, style.scss */
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 1000;
+  color: #fff;
 }
 
-/* line 17, style.scss */
+/* line 21, style.scss */
 h3 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
@@ -485,14 +486,14 @@ h3 {
   color: #112d4e;
 }
 
-/* line 25, style.scss */
+/* line 29, style.scss */
 h4 {
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 500;
 }
 
-/* line 31, style.scss */
+/* line 35, style.scss */
 h5 {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
@@ -500,14 +501,30 @@ h5 {
   color: #4c4c4c;
 }
 
-/* line 38, style.scss */
+/* line 42, style.scss */
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* line 49, style.scss */
 .hdr-content p {
   font-family: 'Roboto', sans-serif;
   font-size: 21px;
   font-weight: 500;
 }
 
-/* line 44, style.scss */
+/* line 55, style.scss */
+.h2-descriptor {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* line 62, style.scss */
 .row_p {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -517,14 +534,14 @@ h5 {
   text-align: center;
 }
 
-/* line 53, style.scss */
+/* line 71, style.scss */
 .h4_descriptor {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
 
-/* line 59, style.scss */
+/* line 77, style.scss */
 .h5-descriptor {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -532,33 +549,57 @@ h5 {
   color: #4c4c4c;
 }
 
-/* line 66, style.scss */
-.button-menu {
+/* line 84, style.scss */
+.button-menu, .form-group button, .call2act_block button, #form_long button, .card button {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-/* line 71, style.scss */
-p {
+/* line 89, style.scss */
+.form-group input, #form_long input,
+#form_long select {
+  border: none;
+  background-color: #dbe2ef;
+  border-radius: 2rem;
+  height: 3em;
+}
+
+/* line 96, style.scss */
+.form-group button, .call2act_block button, #form_long button, .card button {
+  padding: .6em 3.5em;
+  border-radius: 2rem;
+  background-color: #3f72af !important;
+  border: 2px #3f72af !important solid !important;
+}
+/* line 101, style.scss */
+.form-group button:hover, .call2act_block button:hover, #form_long button:hover, .card button:hover {
+  background-color: rgba(102, 102, 102, 0.5) !important;
+  color: #fff !important;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* line 108, style.scss */
+p, .card-body p, .dollar, .month {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 75, style.scss */
+/* line 112, style.scss */
 #features, .how-works_ttl {
   margin: 6.2em 0 0 0;
 }
 
-/* line 111, style.scss */
+/* line 149, style.scss */
 .change-bg {
   background-color: #f9f7f7;
 }
 
-/* line 118, style.scss */
+/* line 156, style.scss */
 .nav-item a {
   color: #666666 !important;
 }
 
-/* line 122, style.scss */
+/* line 160, style.scss */
 li .btn-outline-primary {
   color: #3f72af !important;
   border-color: #666666 !important;
@@ -566,7 +607,7 @@ li .btn-outline-primary {
   border-radius: .45rem !important;
 }
 
-/* line 129, style.scss */
+/* line 167, style.scss */
 .btn-outline-primary:hover {
   background-color: rgba(102, 102, 102, 0.5) !important;
   color: #fff !important;
@@ -574,7 +615,7 @@ li .btn-outline-primary {
   transition: all .2s;
 }
 
-/* line 135, style.scss */
+/* line 173, style.scss */
 .hover-effect::before {
   content: '';
   display: block;
@@ -587,52 +628,28 @@ li .btn-outline-primary {
   transition: all .3s;
 }
 
-/* line 145, style.scss */
+/* line 183, style.scss */
 .hover-effect:hover::before {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-/* line 151, style.scss */
+/* line 189, style.scss */
 .hdr-content {
   margin: 7em 0 0 0;
 }
 
-/* line 155, style.scss */
+/* line 193, style.scss */
 .hdr-content-ttl {
   margin: 5em 0 0 0;
 }
 
-/* line 165, style.scss */
-.form-group input {
-  border: none;
-  background-color: #dbe2ef;
-  border-radius: 2rem;
-  height: 3em;
-}
-
-/* line 172, style.scss */
-.form-group button {
-  padding: .6em 3.5em;
-  border-radius: 2rem;
-  background-color: #3f72af !important;
-  border: 2px #3f72af !important solid !important;
-}
-
-/* line 179, style.scss */
-.form-group button:hover {
-  background-color: rgba(102, 102, 102, 0.5) !important;
-  color: #fff !important;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-/* line 185, style.scss */
+/* line 212, style.scss */
 .hdr_form {
   margin-bottom: 4.6em;
 }
 
-/* line 191, style.scss */
+/* line 218, style.scss */
 .hdr-pic {
   background-color: #dbe2ef;
   height: 36em;
@@ -640,33 +657,167 @@ li .btn-outline-primary {
   right: 0;
 }
 
-/* line 198, style.scss */
+/* line 225, style.scss */
 .bg-picture {
   position: relative;
   top: 10.8em;
 }
 
-/* line 211, style.scss */
+/* line 238, style.scss */
 .row_ttl h3:after {
   content: '';
   display: block;
-  width: 5%;
+  width: 1.5em;
   background-color: #3f72af !important;
   height: 1px;
   margin: .4em auto;
 }
 
-/* line 226, style.scss */
+/* line 253, style.scss */
 .features_row_cont {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   margin: 3em 0 6em 0;
 }
 
-/* line 231, style.scss */
+/* line 258, style.scss */
 .features_row_cont div {
   margin: 2em auto;
   padding: 0 2.6em;
+}
+
+/* line 282, style.scss */
+.call2act_block {
+  background-image: url(/img/bg-call2action.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 28em;
+}
+
+/* line 289, style.scss */
+.call2act_block h2 {
+  margin: 2em 0 0 0;
+}
+
+/* line 293, style.scss */
+.call2act_block p {
+  margin: 1.5em 6em;
+}
+
+/* line 301, style.scss */
+.call2act_block button {
+  display: block;
+  margin: 0 auto;
+  background-color: #112d4e !important;
+}
+
+/* line 311, style.scss */
+#form_long {
+  background: #0073B3;
+}
+
+/* line 315, style.scss */
+label {
+  color: #fff;
+}
+
+/* line 319, style.scss */
+#form_long input,
+#form_long select {
+  background-color: #fff;
+}
+
+/* line 325, style.scss */
+.form-arrow {
+  background: url(/img/chevron-down-solid.svg) 50% 200px no-repeat;
+  background-position: 95% center !important;
+  background-size: 15px;
+}
+
+/* line 332, style.scss */
+#form_long button {
+  display: block;
+  margin: 0 auto;
+  background-color: #0073B3 !important;
+  border-color: #fff;
+  padding: .6em 4.5em !important;
+}
+
+/* line 344, style.scss */
+.card {
+  border-radius: .55rem;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 348, style.scss */
+.card-title_container {
+  background-color: #0073B3 !important;
+}
+
+/* line 352, style.scss */
+.card-title_container h6 {
+  margin: .5em !important;
+}
+
+/* line 356, style.scss */
+.card-body p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 42px;
+  color: #0073B3;
+}
+
+/* line 364, style.scss */
+.dollar {
+  font-weight: bold;
+  font-size: 24px;
+  display: inline !important;
+  vertical-align: super;
+}
+
+/* line 371, style.scss */
+.month {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* line 377, style.scss */
+.list-group-item {
+  border: none !important;
+}
+
+/* line 381, style.scss */
+.card svg {
+  margin: 0 auto;
+}
+
+/* line 385, style.scss */
+.card button {
+  display: block;
+  margin: 0 auto;
+  background-color: #0073B3 !important;
+  border-color: #fff;
+  padding: .6em 4.5em !important;
+  position: absolute;
+  bottom: -4%;
+  right: auto;
+  left: 21%;
+}
+
+/* line 399, style.scss */
+.card-right .card-title_container {
+  background-color: #112d4e !important;
+}
+
+/* line 403, style.scss */
+.card-right p {
+  color: #112d4e;
+}
+
+/* line 407, style.scss */
+.card-right button {
+  background-color: #112d4e !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,9 @@
 // IMPORTS
 @import 'reset';
 
+// Peremennye
+
+$color-prim: #3f72af !important;
 // EXTENDS
 %h1-style{
     font-family: 'Playfair Display', serif;
@@ -11,7 +14,8 @@
 %h2-style{
     font-family: 'Roboto', sans-serif;
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 1000;
+    color: #fff;
 }
 
 %h3-style{
@@ -35,10 +39,24 @@
     color: #4c4c4c;
 }
 
+%h6-style{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
 %h1-descriptor{
     font-family: 'Roboto', sans-serif;
     font-size: 21px;
     font-weight: 500;
+}
+
+%h2-descriptor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
 }
 
 %h3-descriptor{
@@ -68,6 +86,25 @@
     font-size: 16px;
 }
 
+%form-style{
+    border: none;
+    background-color:#dbe2ef;
+    border-radius: 2rem;
+    height: 3em;
+}
+
+%buttons {
+    padding: .6em 3.5em;
+    border-radius: 2rem;
+    background-color: $color-prim;
+    border: 2px $color-prim solid !important;
+    &:hover {
+        background-color: rgba(40%, 40%, 40%, .5) !important;
+        color: #fff !important;
+        transition: all .2s;
+    }
+}
+
 %p-style{
     font-family: 'Roboto', sans-serif;
 }
@@ -75,9 +112,6 @@
 %ttls-top-margins{
     margin: 6.2em 0 0 0;
 }
-// Peremennye
-
-$color-prim: #3f72af !important;
 
 // GENERAL STYLES
 h1 {
@@ -98,6 +132,10 @@ h4 {
 
 h5{
     @extend %h5-style;
+}
+
+h6{
+    @extend %h6-style;
 }
 
 p{
@@ -163,23 +201,12 @@ li .btn-outline-primary{
 // Form
 
 .form-group input{
-    border: none;
-    background-color:#dbe2ef;
-    border-radius: 2rem;
-    height: 3em;
+    @extend %form-style;
 }
 
 .form-group button{
-    padding: .6em 3.5em;
-    border-radius: 2rem;
-    background-color: $color-prim;
-    border: 2px $color-prim solid !important;
-}
-
-.form-group button:hover{
-    background-color: rgba(40%, 40%, 40%, .5) !important;
-    color: #fff !important;
-    transition: all .2s;
+    @extend %buttons;
+    @extend %button-menu;
 }
 
 .hdr_form{
@@ -211,7 +238,7 @@ li .btn-outline-primary{
 .row_ttl h3:after{
     content:'';
     display: block;
-    width: 5%;
+    width: 1.5em;
     background-color: $color-prim;
     height: 1px;
     margin: .4em auto;
@@ -249,4 +276,134 @@ li .btn-outline-primary{
 
 .h5-descriptor{
     @extend %h5-descriptor;
+}
+
+// !!!***---Call to Action---***!!!
+.call2act_block{
+    background-image: url(/img/bg-call2action.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 28em;
+}
+
+.call2act_block h2{
+    margin: 2em 0 0 0;
+}
+
+.call2act_block p{
+    margin: 1.5em 6em;
+}
+
+.h2-descriptor{
+    @extend %h2-descriptor;
+}
+
+.call2act_block button{
+    @extend %buttons;
+    @extend %button-menu;
+    display: block;
+    margin: 0 auto;
+    background-color: #112d4e !important;
+}
+
+// !!!***---Form Long---***!!!
+
+#form_long{
+    background: #0073B3;
+}
+
+label{
+    color: #fff;
+}
+
+#form_long input,
+#form_long select{
+    @extend %form-style;
+    background-color: #fff;
+}
+
+.form-arrow{
+        background: url(/img/chevron-down-solid.svg) 50% 200px no-repeat;
+        background-position: 95% center !important;
+        background-size: 15px;
+
+}
+
+#form_long button{
+    @extend %buttons;
+    @extend %button-menu;
+    display: block;
+    margin: 0 auto;
+    background-color: #0073B3 !important;
+    border-color: #fff;
+    padding: .6em 4.5em !important;
+}
+
+// !!!***---Price---***!!!
+
+.card{
+    border-radius: .55rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.card-title_container{
+    background-color: #0073B3 !important;
+}
+
+.card-title_container h6{
+    margin: .5em !important;
+}
+
+.card-body p{
+    @extend %p-style;
+    text-align: center;
+    font-weight: bold;
+    font-size: 42px;
+    color: #0073B3;
+}
+
+.dollar{
+    @extend %p-style;
+    font-weight: bold;
+    font-size: 24px;
+    display: inline !important;vertical-align: super;
+}
+
+.month{
+    @extend %p-style;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.list-group-item{
+    border: none !important;
+}
+
+.card svg {
+    margin: 0 auto;
+}
+
+.card button{
+    @extend %buttons;
+    @extend %button-menu;
+    display: block;
+    margin: 0 auto;
+    background-color: #0073B3 !important;
+    border-color: #fff;
+    padding: .6em 4.5em !important;
+    position: absolute;
+    bottom: -4%;
+    right: auto;
+    left: 21%;
+}
+
+.card-right .card-title_container{
+    background-color: #112d4e !important;
+}
+
+.card-right p{
+    color: #112d4e;
+}
+
+.card-right button{
+    background-color: #112d4e !important;
 }
