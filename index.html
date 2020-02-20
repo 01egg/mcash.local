@@ -40,7 +40,7 @@
 
     <!-- SCRIPTS -->
     <!-- ====== JQUERY ======-->
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- ====== POPPER ======-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -50,6 +50,9 @@
 
     <!-- ====== FONT AWESOM ======-->
     <script src="assets/FontAwesome/js/fontawesome.min.js"></script>
+
+    <!-- ====== CARUSEL OWL ======-->
+    <script src="assets/OwlCarousel/owl.carousel.min.js"></script>
 
     <!-- ====== CARUSEL SLICK ======-->
     <script type="text/javascript" src="assets/Slick/slick.min.js"></script>
@@ -65,6 +68,9 @@
 
     <!-- ====== MASK ======-->
     <script src="assets/MaskPlugin/jquery.mask.min.js"></script>
+
+    <!-- ====== ****MAIN JS**** ======-->
+    <script src="js/script.js"></script>
 
 </head>
 <body>
@@ -239,7 +245,7 @@
                 <li class="list-group-item">Some option number 2</li>
                 <li class="list-group-item">Some option number 3</li>
                 <li class="list-group-item">Some option number 4</li>
-                <li class="list-group-item">Some option number 5</li>
+                <li class="list-group-item pb-5">Some option number 5</li>
               </ul>
               <button class="btn btn-primary ">Choose</button>
             </div>
@@ -260,7 +266,7 @@
                 <li class="list-group-item">Some option number 2</li>
                 <li class="list-group-item">Some option number 3</li>
                 <li class="list-group-item">Some option number 4</li>
-                <li class="list-group-item">Some option number 5</li>
+                <li class="list-group-item pb-5">Some option number 5</li>
               </ul>
               <button class="btn btn-primary ">Choose</button>
             </div>
@@ -268,5 +274,92 @@
         </div>
       </div>
     </section>
+    <section id="partners" class="change-bg">
+      <div class="container">
+        <div class="row row_partners pt-5 pb-5 row_ttl">
+          <div class="col-xl-12 how-works_ttl">
+            <h3 class="text-center">Our partners</h3>
+            <p class="row_p">We work with a lot of partners, it would be ugly of us not to mention them</p>
+        </div> 
+        <div class="col-xl-12 d-flex justify-content-between pt-5 pb-5">
+          <img src="img/bp-logo.png" alt="">
+          <img src="img/virgin-logo.png" alt="">
+          <img src="img/nhs-logo.png" alt="">
+          <img src="img/edf-logo.png" alt="">
+          <img src="img/sony-logo.png" alt="">
+        </div>       
+        </div>
+      </div>
+    </section>
+    <section id="review">
+      <div class="row row_review row_ttl pb-5 pt-5">
+        <div class="col-xl-12 how-works_ttl">
+          <h3 class="text-center">Review</h3>
+          <p class="row_p">Our partners are in a hurry to share their opinions about us</p>
+        </div>
+        <div class="owl-carousel review_carusel pb-5 pt-5 text-center">
+          <div class="item mt-3 mb-3">
+              <div class="review_quotes">,,</div>
+              <p class="review-txt">Fusce faucibus euismod nisl non fringilla. Integer semper dui justo, quis cursus mi tempus in. Sed pretium diam ex, non convallis magna pretium vel. Maecenas semper augue vel</p>
+              <p class="review-sign">Sahara Reeves</p>
+          </div>
+          <div class="item mt-3 mb-3">
+              <div class="review_quotes">,,</div>
+              <p class="review-txt">Etiam hendrerit malesuada vestibulum. Nunc sed tortor enim. Suspendisse ultrices elit  ut elit scelerisque, sit amet pharetra felis viverra. Morbi ultricies orci augue, a efficitur risus</p>
+              <p class="review-sign">Samirah Mckeown</p>
+          </div>
+          <div class="item mt-3 mb-3">
+              <div class="review_quotes">,,</div>
+              <p class="review-txt">Sed sed posuere urna, et dignissim ex. Mauris sit amet ultrices orci, ut fermentum dui. Nulla ut efficitur leo, at efficitur magna. Vestibulum ante ipsum primis</p>
+              <p class="review-sign">John Smith</p>
+          </div>
+          <div class="item mt-3 mb-3">
+              <div class="review_quotes">,,</div>
+              <p class="review-txt">Fusce volutpat ex ac magna aliquet porta. Donec fermentum pretium tellus, et consequat leo blandit eu. Mauris varius felis massa, bibendum egestas risus vehicula et.</p>
+              <p class="review-sign">Patrick Wilson</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="change-bg">
+      <div class="row row_faqs row_ttl pb-5 pt-5">
+        <div class="col-xl-12 how-works_ttl">
+          <h3 class="text-center">FAQ</h3>
+          <p class="row_p">The answer to the questions you were afraid to ask</p>
+        </div>
+        <div class="col-xl-5 ml-5 mt-5 mb-5">
+          <div class="faq_cont">
+            <p class="faq_ttl">Maecenas fringilla ante metus?</p>
+            <p class="faq_descr">Vestibulum eget feugiat nisl, aliquet ultrices nisi. Suspendisse quis nulla massa. Nunc eleifend mi nec molestie aliquam. Nulla turpis nunc, commodo a est id, pretium convallis sem. Praesent faucibus et neque at blandit. Quisque eget tincidunt enim, eget tempor ex.</p>
+          </div>
+          <div class="faq_cont faq_last-left">
+            <p class="faq_ttl">Phasellus tellus urna, malesuada vel est sit amet?</p>
+            <p class="faq_descr">Sed ultricies eget velit quis dictum. Nulla finibus pellentesque arcu in rutrum. Maecenas ipsum lorem, lobortis maximus cursus nec, hendrerit volutpat sem. Nam rutrum sed dolor eget fringilla. Vestibulum erat velit, tincidunt eu ullamcorper in, hendrerit sed nunc.</p>
+          </div>
+          <div class="faq_cont faq_hid-left">
+            <p class="faq_ttl">Left</p>
+            <p class="faq_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae facere at quam? Quae eos autem sed similique, sint minus.</p>
+          </div>
+        </div>
+        <div class="col-xl-5 ml-5 mt-5 mb-5">
+          <div class="faq_cont">
+            <p class="faq_ttl">Duis justo diam, rutrum non dignissim?</p>
+            <p class="faq_descr">Sed quis urna quam. Fusce vitae hendrerit purus. Donec aliquam justo sed vulputate porttitor. Integer laoreet lacinia odio id finibus. Proin mi libero, accumsan nec mauris nec, malesuada auctor orci. Mauris aliquet convallis eros, id ultrices mi sodales vel.</p>
+          </div>
+          <div class="faq_cont faq_last-right">
+            <p class="faq_ttl">Cras leo nulla, lacinia non suscipit sed, scelerisque nisi?</p>
+            <p class="faq_descr">Fusce volutpat ex ac magna aliquet porta. Donec fermentum pretium tellus, et consequat leo blandit eu. Mauris varius felis massa, bibendum egestas risus vehicula et. Fusce faucibus euismod nisl non fringilla. Integer semper dui justo, quis cursus mi tempus in. </p>
+          </div>
+          <div class="faq_cont faq_hid-right">
+            <p class="faq_ttl">Right</p>
+            <p class="faq_descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod porro eius, ullam pariatur ipsum itaque velit reiciendis ea cum alias.</p>
+          </div>
+        </div>
+        <div class="col-xl-12">
+          <button class="btn btn-primary faq_hid-btn">All questions</button>
+        </div>
+      </div>
+      </section>
 </body>
 </html>
+

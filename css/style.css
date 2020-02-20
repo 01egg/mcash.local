@@ -550,7 +550,7 @@ h6 {
 }
 
 /* line 84, style.scss */
-.button-menu, .form-group button, .call2act_block button, #form_long button, .card button {
+.button-menu, .form-group button, .call2act_block button, #form_long button, .card button, .row_faqs button {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
@@ -565,14 +565,14 @@ h6 {
 }
 
 /* line 96, style.scss */
-.form-group button, .call2act_block button, #form_long button, .card button {
+.form-group button, .call2act_block button, #form_long button, .card button, .row_faqs button {
   padding: .6em 3.5em;
   border-radius: 2rem;
   background-color: #3f72af !important;
   border: 2px #3f72af !important solid !important;
 }
 /* line 101, style.scss */
-.form-group button:hover, .call2act_block button:hover, #form_long button:hover, .card button:hover {
+.form-group button:hover, .call2act_block button:hover, #form_long button:hover, .card button:hover, .row_faqs button:hover {
   background-color: rgba(102, 102, 102, 0.5) !important;
   color: #fff !important;
   -webkit-transition: all .2s;
@@ -580,7 +580,7 @@ h6 {
 }
 
 /* line 108, style.scss */
-p, .card-body p, .dollar, .month {
+p, .card-body p, .dollar, .month, .item .review-txt, .faq_ttl, .faq_descr {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -744,23 +744,28 @@ label {
 }
 
 /* line 344, style.scss */
+.custom-select {
+  cursor: pointer;
+}
+
+/* line 348, style.scss */
 .card {
   border-radius: .55rem;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 348, style.scss */
+/* line 352, style.scss */
 .card-title_container {
   background-color: #0073B3 !important;
 }
 
-/* line 352, style.scss */
+/* line 356, style.scss */
 .card-title_container h6 {
   margin: .5em !important;
 }
 
-/* line 356, style.scss */
+/* line 360, style.scss */
 .card-body p {
   text-align: center;
   font-weight: bold;
@@ -768,7 +773,7 @@ label {
   color: #0073B3;
 }
 
-/* line 364, style.scss */
+/* line 368, style.scss */
 .dollar {
   font-weight: bold;
   font-size: 24px;
@@ -776,23 +781,23 @@ label {
   vertical-align: super;
 }
 
-/* line 371, style.scss */
+/* line 375, style.scss */
 .month {
   font-weight: bold;
   font-size: 24px;
 }
 
-/* line 377, style.scss */
+/* line 381, style.scss */
 .list-group-item {
   border: none !important;
 }
 
-/* line 381, style.scss */
+/* line 385, style.scss */
 .card svg {
   margin: 0 auto;
 }
 
-/* line 385, style.scss */
+/* line 389, style.scss */
 .card button {
   display: block;
   margin: 0 auto;
@@ -805,19 +810,95 @@ label {
   left: 21%;
 }
 
-/* line 399, style.scss */
+/* line 403, style.scss */
 .card-right .card-title_container {
   background-color: #112d4e !important;
 }
 
-/* line 403, style.scss */
+/* line 407, style.scss */
 .card-right p {
   color: #112d4e;
 }
 
-/* line 407, style.scss */
+/* line 411, style.scss */
 .card-right button {
   background-color: #112d4e !important;
+  border-color: #112d4e;
+}
+
+/* line 418, style.scss */
+#partners img {
+  max-height: 70%;
+  -webkit-filter: opacity(0.5);
+}
+
+/* line 423, style.scss */
+#partners img:hover {
+  max-height: 80%;
+  -webkit-filter: opacity(1);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+/* line 432, style.scss */
+.review_carusel .item {
+  border-radius: .55rem;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 600px;
+  height: 250px;
+}
+
+/* line 440, style.scss */
+.review_quotes {
+  position: absolute;
+  top: -70%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  font-family: 'Playfair Display', serif !important;
+  color: #d0dae8;
+  font-size: 250px;
+}
+
+/* line 453, style.scss */
+.item .review-txt {
+  font-size: 18px;
+  font-weight: 800;
+  display: inline-block;
+  margin: 9% 9% 2% 9%;
+}
+
+/* line 464, style.scss */
+.faq_ttl {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* line 471, style.scss */
+.faq_descr {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+/* line 478, style.scss */
+.row_faqs button {
+  display: block;
+  margin: 0 auto;
+  background-color: #3f72af !important !important;
+  border-color: #3f72af !important;
+}
+
+/* line 487, style.scss */
+.faq_hid-left,
+.faq_hid-right {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
