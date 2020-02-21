@@ -3,12 +3,42 @@
 
         // OWL CARUSEL
         $('.review_carusel').owlCarousel({
-            items:2,
-            stagePadding: 350,
+            stagePadding: 0,
+            items:1,
             loop:true,
-            margin:50,
+            margin:10,
+            loop:true,
             nav:false,
             autoplay:true,
+            responsive:{
+                0:{
+                    autoWidth:true,
+                },
+                800:{
+                    autoWidth:false,
+                    stagePadding:119,
+                },
+                900:{
+                    stagePadding:170,
+                },
+                1000:{
+                    stagePadding:200,
+                },
+                1100:{
+                    stagePadding:270,
+                },
+                1300:{
+                    stagePadding:340,
+                },
+                1500:{
+                    stagePadding:410,
+                },
+                1700:{
+                    stagePadding:480,
+                },
+                
+
+            }
         });
 
         // BUTTON HIDE
