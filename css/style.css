@@ -580,7 +580,7 @@ h6 {
 }
 
 /* line 108, style.scss */
-p, .card-body p, .dollar, .month, .item .review-txt, .faq_ttl, .faq_descr {
+p, .card-body p, .dollar, .month, .item .review-txt, .faq_ttl, .faq_descr, .map_informer_ttl, .map_informer_sub-ttl, .map_informer_info {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -899,6 +899,65 @@ label {
 .faq_hid-left,
 .faq_hid-right {
   display: none;
+}
+
+/* line 494, style.scss */
+.map_row {
+  position: relative;
+}
+
+/* line 498, style.scss */
+section.map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 504, style.scss */
+iframe {
+  margin-top: -50px;
+  pointer-events: none;
+}
+
+/* line 509, style.scss */
+.clicked {
+  pointer-events: auto;
+}
+
+/* line 513, style.scss */
+.map_informer {
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  width: 17em;
+  height: 23em !important;
+}
+
+/* line 521, style.scss */
+.map_informer_ttl {
+  font-size: 26px;
+  font-weight: 900;
+  margin: 2.5em 0 1.5em 1em;
+}
+
+/* line 528, style.scss */
+.map_info_block {
+  margin: 0 0 1.5em 2em;
+}
+
+/* line 532, style.scss */
+.map_informer_sub-ttl {
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+/* line 540, style.scss */
+.map_informer_info {
+  font-size: 15px;
+  font-weight: 100;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
