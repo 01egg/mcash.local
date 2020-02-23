@@ -512,7 +512,7 @@ label{
 
   .map_informer{
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: 15%;
     width: 17em;
     height: 23em !important;
@@ -544,3 +544,41 @@ label{
     color: #000;
 }
 
+  // !!!***---FOOTER---***!!!
+#footer{
+    background-color: #112d4e;
+}
+
+.footer_txt,
+.footer_txt a{
+    @extend %h4-descriptor;
+    color: #ededed;
+}
+
+.footer_txt-hdr{
+    @extend %h5-descriptor;
+    color: #ededed !important;
+}
+
+.footer_links{
+    padding: 0;
+    line-height: 2.2em;
+}
+
+.footer_links li{
+    list-style: none;
+}
+
+.footer_icons img{
+    margin-left: .4em;
+    cursor: pointer;
+}
+
+.line{
+    background-color: #fff;
+}
+
+.adress{
+    @extend %h4-descriptor;
+    color: #ededed;
+}

@@ -535,14 +535,15 @@ h6 {
 }
 
 /* line 71, style.scss */
-.h4_descriptor {
+.h4_descriptor, .footer_txt,
+.footer_txt a, .adress {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 500;
 }
 
 /* line 77, style.scss */
-.h5-descriptor {
+.h5-descriptor, .footer_txt-hdr {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -927,7 +928,7 @@ iframe {
 /* line 513, style.scss */
 .map_informer {
   position: absolute;
-  left: 30%;
+  left: 25%;
   top: 15%;
   width: 17em;
   height: 23em !important;
@@ -958,6 +959,49 @@ iframe {
   font-size: 15px;
   font-weight: 100;
   color: #000;
+}
+
+/* line 548, style.scss */
+#footer {
+  background-color: #112d4e;
+}
+
+/* line 552, style.scss */
+.footer_txt,
+.footer_txt a {
+  color: #ededed;
+}
+
+/* line 558, style.scss */
+.footer_txt-hdr {
+  color: #ededed !important;
+}
+
+/* line 563, style.scss */
+.footer_links {
+  padding: 0;
+  line-height: 2.2em;
+}
+
+/* line 568, style.scss */
+.footer_links li {
+  list-style: none;
+}
+
+/* line 572, style.scss */
+.footer_icons img {
+  margin-left: .4em;
+  cursor: pointer;
+}
+
+/* line 577, style.scss */
+.line {
+  background-color: #fff;
+}
+
+/* line 581, style.scss */
+.adress {
+  color: #ededed;
 }
 
 /*# sourceMappingURL=style.css.map */
