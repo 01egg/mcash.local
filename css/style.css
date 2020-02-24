@@ -569,8 +569,8 @@ h6 {
 .form-group button, .call2act_block button, #form_long button, .card button, .row_faqs button {
   padding: .6em 3.5em;
   border-radius: 2rem;
-  background-color: #3f72af !important;
-  border: 2px #3f72af !important solid !important;
+  background-color: #3f72af;
+  border: 1px #3f72af solid !important;
 }
 /* line 101, style.scss */
 .form-group button:hover, .call2act_block button:hover, #form_long button:hover, .card button:hover, .row_faqs button:hover {
@@ -602,7 +602,7 @@ p, .card-body p, .dollar, .month, .item .review-txt, .faq_ttl, .faq_descr, .map_
 
 /* line 160, style.scss */
 li .btn-outline-primary {
-  color: #3f72af !important;
+  color: #3f72af;
   border-color: #666666 !important;
   padding: .6em 1.8em;
   border-radius: .45rem !important;
@@ -669,7 +669,7 @@ li .btn-outline-primary {
   content: '';
   display: block;
   width: 1.5em;
-  background-color: #3f72af !important;
+  background-color: #3f72af;
   height: 1px;
   margin: .4em auto;
 }
@@ -740,8 +740,8 @@ label {
   display: block;
   margin: 0 auto;
   background-color: #0073B3 !important;
-  border-color: #fff;
-  padding: .6em 3.5em !important;
+  border-color: #fff !important;
+  padding: .6em 4.5em !important;
 }
 
 /* line 344, style.scss */
@@ -892,8 +892,8 @@ label {
 .row_faqs button {
   display: block;
   margin: 0 auto;
-  background-color: #3f72af !important !important;
-  border-color: #3f72af !important;
+  background-color: #3f72af !important;
+  border-color: #3f72af;
 }
 
 /* line 487, style.scss */

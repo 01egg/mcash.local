@@ -3,7 +3,7 @@
 
 // Peremennye
 
-$color-prim: #3f72af !important;
+$color-prim: #3f72af;
 // EXTENDS
 %h1-style{
     font-family: 'Playfair Display', serif;
@@ -97,7 +97,7 @@ $color-prim: #3f72af !important;
     padding: .6em 3.5em;
     border-radius: 2rem;
     background-color: $color-prim;
-    border: 2px $color-prim solid !important;
+    border: 1px $color-prim solid !important;
     &:hover {
         background-color: rgba(40%, 40%, 40%, .5) !important;
         color: #fff !important;
@@ -335,8 +335,8 @@ label{
     display: block;
     margin: 0 auto;
     background-color: #0073B3 !important;
-    border-color: #fff;
-    padding: .6em 3.5em !important;
+    border-color: #fff !important;
+    padding: .6em 4.5em !important;
 }
 
 // !!!***---Price---***!!!
