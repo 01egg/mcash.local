@@ -516,6 +516,7 @@ label{
     top: 15%;
     width: 17em;
     height: 23em !important;
+    z-index: 1;
   }
 
 .map_informer_ttl{
@@ -581,4 +582,84 @@ label{
 .adress{
     @extend %h4-descriptor;
     color: #ededed;
+}
+
+
+
+
+
+// !!!***---MEDIA QUERIES---***!!!
+
+@media (max-width: 1200px){
+    .hdr-pic{
+        position: relative;
+    }
+    .hdr-content-ttl{
+        margin: 0 auto;
+    }
+    .call2act_block p{
+        margin: 1em 12em;
+    }
+
+    .card button{
+        left: 40% !important;
+    }
+}
+
+@media (max-width: 1100px){
+    .map_informer{
+        position: inherit !important;
+        left: 0;
+        margin: 5% 0 0 0 ;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px){
+    .card button{
+        left: 35% !important;
+    }
+}
+
+@media (max-width: 800px){
+    .call2act_block p{
+        margin: 1em 4em;
+    }
+}
+
+@media (max-width: 767px){
+    .card button{
+        left: 30% !important;
+    }
+}
+
+@media (max-width: 600px){
+    .review_carusel .item{
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 470px){
+    .card button{
+        left: 27% !important;
+    }
+}
+
+@media (max-width: 420px){
+    .card button{
+        left: 25% !important;
+    }
+}
+
+@media (max-width: 400px){
+    .card button{
+        left: 20% !important;
+    }
+}
+
+@media (max-width: 310px){
+    .card button{
+        left: 15% !important;
+    }
 }

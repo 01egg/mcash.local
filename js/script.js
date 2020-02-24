@@ -13,9 +13,11 @@
             responsive:{
                 0:{
                     autoWidth:true,
+                    autoHeight:true,
                 },
                 800:{
                     autoWidth:false,
+                    autoHeight:false,
                     stagePadding:119,
                 },
                 900:{
@@ -31,12 +33,20 @@
                     stagePadding:340,
                 },
                 1500:{
-                    stagePadding:410,
+                    stagePadding:420,
                 },
                 1700:{
-                    stagePadding:480,
+                    stagePadding:540,
                 },
-                
+                1800:{
+                    stagePadding:560,
+                },
+                1900:{
+                    stagePadding:600,
+                },
+                2000:{
+                    stagePadding:650,
+                },
 
             }
         });
@@ -58,6 +68,22 @@
         }).mouseleave(function(){
             $(this).find('iframe').removeClass('clicked')
         });
+
+        // Adaptive queries
+            let viewportWidth = $(window).width();
+            if (viewportWidth < 1200) {
+                    $(".hdr-content-ttl").removeClass("ml-5");
+                    $(".cont-adaptive").addClass("container");
+                    $(".btn-comp-plans").addClass("mt-4");
+                    $(".card ").addClass("mb-5");
+            } else {
+                $(".hdr-content-ttl").addClass("ml-5");
+                $(".cont-adaptive").removeClass("container");
+                $(".btn-comp-plans").removeClass("mt-4");
+                $(".card ").removeClass("mb-5");
+            }
+
+
 
     });
     })(jQuery);
