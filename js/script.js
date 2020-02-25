@@ -83,7 +83,47 @@
                 $(".card ").removeClass("mb-5");
             }
 
+            // Mask
+            $('#inputTell').inputmask("+0118 (999) 999-99-99");
+            $('.inpt-popup_phone').inputmask({
+                mask: '+0118 (999) 999-99-99',
+                showMaskOnHover: false,
+                showMaskOnFocus: true,
+            });
 
+            // Pop Up
+            $('#contact_us_popup').wiFeedBack({
+                fbScript: 'blocks/wi-feedback.php',
+                fbLink: '.contact_us',
+                fbColor: false,
+                fbTheme: false
+            });
+
+            $('#submit_popup').wiFeedBack({
+                fbScript: 'blocks/wi-feedback.php',
+                fbLink:  false,
+                fbColor: false,
+                fbTheme: false
+            });
+
+            $(".inpt-popup_name, .inpt-popup_phone").focus(function() {
+                $('.inpt-lbl').addClass('inpt_change');
+                $('.bar').addClass('bar1');
+              });
+            
+              $(".inpt-popup_name, .inpt-popup_phone").blur(function(){
+                if( ($('.inpt-popup_name').val()) || ($('.inpt-popup_phone').val()) ){
+                    $('.inpt-lbl').addClass('inpt_change');
+                    $('.bar').addClass("bar1");
+                } else{
+                    $('.inpt-lbl').removeClass('inpt_change');
+                    $('.bar').removeClass("bar1");
+                }
+            });
+
+            if($("form").hasClass("sent")){
+                console.log("Привет")
+            }
 
     });
     })(jQuery);

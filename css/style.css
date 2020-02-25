@@ -551,7 +551,7 @@ h6 {
 }
 
 /* line 84, style.scss */
-.button-menu, .form-group button, .call2act_block button, #form_long button, .card button, .row_faqs button {
+.button-menu, .form-group button, .call2act_block button, #form_long button, .card button, .row_faqs button, .btn-send {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
@@ -566,14 +566,14 @@ h6 {
 }
 
 /* line 96, style.scss */
-.form-group button, .call2act_block button, #form_long button, .card button, .row_faqs button {
+.form-group button, .call2act_block button, #form_long button, .card button, .row_faqs button, .btn-send {
   padding: .6em 3.5em;
   border-radius: 2rem;
   background-color: #3f72af;
   border: 1px #3f72af solid !important;
 }
 /* line 101, style.scss */
-.form-group button:hover, .call2act_block button:hover, #form_long button:hover, .card button:hover, .row_faqs button:hover {
+.form-group button:hover, .call2act_block button:hover, #form_long button:hover, .card button:hover, .row_faqs button:hover, .btn-send:hover {
   background-color: rgba(102, 102, 102, 0.5) !important;
   color: #fff !important;
   -webkit-transition: all .2s;
@@ -1005,29 +1005,159 @@ iframe {
   color: #ededed;
 }
 
+/* line 588, style.scss */
+#contact_us_popup {
+  padding: 2% !important;
+}
+
+/* line 591, style.scss */
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+/* line 596, style.scss */
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+/* line 605, style.scss */
+.btn-send {
+  display: block;
+  margin: 0 auto;
+  background-color: #3f72af !important;
+  border-color: #3f72af;
+}
+
+/* LABEL ======================================= */
+/* line 615, style.scss */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+/* line 629, style.scss */
+.inpt_change {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
+  outline: none;
+}
+
+/* BOTTOM BARS ================================= */
+/* line 637, style.scss */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+/* line 642, style.scss */
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* line 654, style.scss */
+.bar:before {
+  left: 50%;
+}
+
+/* line 657, style.scss */
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+/* line 662, style.scss */
+.bar1:before,
+.bar1:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+/* line 668, style.scss */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+/* line 679, style.scss */
+input:focus + .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
 @media (max-width: 1200px) {
-  /* line 594, style.scss */
+  /* line 703, style.scss */
   .hdr-pic {
     position: relative;
   }
 
-  /* line 597, style.scss */
+  /* line 706, style.scss */
   .hdr-content-ttl {
     margin: 0 auto;
   }
 
-  /* line 600, style.scss */
+  /* line 709, style.scss */
   .call2act_block p {
     margin: 1em 12em;
   }
 
-  /* line 604, style.scss */
+  /* line 713, style.scss */
   .card button {
     left: 40% !important;
   }
 }
 @media (max-width: 1100px) {
-  /* line 610, style.scss */
+  /* line 719, style.scss */
   .map_informer {
     position: inherit !important;
     left: 0;
@@ -1036,49 +1166,49 @@ iframe {
   }
 }
 @media (max-width: 991px) {
-  /* line 619, style.scss */
+  /* line 728, style.scss */
   .card button {
     left: 35% !important;
   }
 }
 @media (max-width: 800px) {
-  /* line 625, style.scss */
+  /* line 734, style.scss */
   .call2act_block p {
     margin: 1em 4em;
   }
 }
 @media (max-width: 767px) {
-  /* line 631, style.scss */
+  /* line 740, style.scss */
   .card button {
     left: 30% !important;
   }
 }
 @media (max-width: 600px) {
-  /* line 637, style.scss */
+  /* line 746, style.scss */
   .review_carusel .item {
     width: 400px;
   }
 }
 @media (max-width: 470px) {
-  /* line 644, style.scss */
+  /* line 753, style.scss */
   .card button {
     left: 27% !important;
   }
 }
 @media (max-width: 420px) {
-  /* line 650, style.scss */
+  /* line 759, style.scss */
   .card button {
     left: 25% !important;
   }
 }
 @media (max-width: 400px) {
-  /* line 656, style.scss */
+  /* line 765, style.scss */
   .card button {
     left: 20% !important;
   }
 }
 @media (max-width: 310px) {
-  /* line 662, style.scss */
+  /* line 771, style.scss */
   .card button {
     left: 15% !important;
   }

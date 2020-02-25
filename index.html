@@ -68,6 +68,7 @@
 
     <!-- ====== MASK ======-->
     <script src="assets/MaskPlugin/jquery.mask.min.js"></script>
+    <script src="assets/MaskTel/jquery.inputmask.min.js"></script>
 
     <!-- ====== ****MAIN JS**** ======-->
     <script src="js/script.js"></script>
@@ -101,7 +102,7 @@
                               </div>
                             </li>
                             <li class="nav-item mr-5">
-                                <button type="button" class="btn btn-outline-primary">Contact Us</button>
+                                <button type="button" class="btn btn-outline-primary contact_us">Contact Us</button>
                             </li>
                           </ul>
                         </div>
@@ -111,7 +112,7 @@
                     <div class="col-xl-5 col-lg-8 ml-5 hdr-content-ttl">
                         <h1>Be Smart, Think Smart, Save Money</h1>
                         <p>Compare your take-home today</p>
-                        <form class="hdr_form">
+                        <form id="submit_popup" class="hdr_form">
                             <div class="form-row">
                                 <div class="form-group col-xl-12">
                                   <input type="tel" class="form-control button-menu" id="inputTell" placeholder="Phone Number">
@@ -370,7 +371,7 @@
             <p class="map_informer_ttl">Contact</p>
             <div class="map_info_block">
               <p class="map_informer_sub-ttl">Phone:</p>
-              <a href="tel:+0 800 123 45 67" class="map_informer_info">0 800 123 45 67</a>
+              <a href="tel:+0 800 123 45 67" class="map_informer_info">0333 202 0720</a>
             </div>
             <div class="map_info_block">
               <p class="map_informer_sub-ttl">Hours available:</p>
@@ -383,7 +384,7 @@
           </div>
           <div class="col-xl-12">
             <section class="map">
-              <iframe src="https://www.google.com/maps/d/embed?mid=1o1bs1QvAQbiENsg5L1vkT84wxfsTrpbi" width="100%" height="700" frameborder="0" style="border:0;" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.930538937023!2d-0.8466806838807049!3d51.40433097961841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI0JzE1LjYiTiAwwrA1MCc0MC4yIlc!5e0!3m2!1sru!2sby!4v1582620400100!5m2!1sru!2sby" width="100%" height="700" frameborder="0" style="border:0;" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
             </section>
         </div>
 
@@ -414,8 +415,8 @@
             <div class="col-xl-2">
               <p class="footer_txt-hdr">About company</p>
               <ul class="footer_links">
-                <li class="footer_txt">Company no.: 12345678</li>
-                <li class="footer_txt">VAT Number: 123 4567 89</li>
+                <li class="footer_txt">Company no.: 45761583</li>
+                <li class="footer_txt">VAT Number: 458 2577 88</li>
               </ul>
             </div>
             <div class="col-xl-2">
@@ -438,6 +439,24 @@
           </div>
         </div>
       </footer>
+      <!-- HIDED ELEMENTS -->
+
+      <!-- Pop-Up -->
+      <div id="contact_us_popup" class="mfp-hide">
+          <div class="group">      
+            <input type="text" class="inpt-popup_name" name="Name" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label class="inpt-lbl">Name</label>
+          </div>
+          <div class="group">      
+            <input type="tel" class="inpt-popup_phone" name="Phone" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label class="inpt-lbl">Phone</label>
+          </div>
+          <button class="btn btn-primary btn-send">SEND</button>
+      </div>
 </body>
 </html>
 
