@@ -696,6 +696,46 @@ label{
     to 	{ width:0; background:transparent; }
   }
 
+// ALERT THANK YOU
+
+.alert{
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px #000;
+}
+
+.alert p{
+    @extend %p-style;
+}
+
+.alert h5{
+    color: #000 !important;
+    text-align: center !important;
+}
+
+// BUTTON learn
+.btn_learn a{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#test-popup{
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+#test-popup p,
+#test-popup ul,
+#test-popup li
+{
+    @extend %p-style;
+    color: #fff !important;
+}
+
+
+
+
 
 // !!!***---MEDIA QUERIES---***!!!
 

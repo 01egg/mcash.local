@@ -85,20 +85,18 @@
                           <span class="navbar-toggler-icon"></span>
                         </button>
                       
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div id="menu" class="collapse navbar-collapse">
                           <ul class="navbar-nav ml-auto d-flex align-items-center">
                             <li class="nav-item mr-5">
-                              <a class="nav-link hover-effect" href="#">About Us</a>
+                              <a class="nav-link hover-effect" href="#features">About Us</a>
                             </li>
                             <li class="nav-item dropdown mr-5">
-                              <a class="nav-link dropdown-toggle hover-effect" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Resources
-                              </a>
+                              <a class="nav-link dropdown-toggle hover-effect" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Details</a>
                               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#how-works">How it works</a>
+                                <a class="dropdown-item" href="#price">Price</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#review">Reviews</a>
                               </div>
                             </li>
                             <li class="nav-item mr-5">
@@ -112,21 +110,21 @@
                     <div class="col-xl-5 col-lg-8 ml-5 hdr-content-ttl">
                         <h1>Be Smart, Think Smart, Save Money</h1>
                         <p>Compare your take-home today</p>
-                        <form id="submit_popup" class="hdr_form">
+                        <div id="submit_popup" class="hdr_form">
                             <div class="form-row">
                                 <div class="form-group col-xl-12">
-                                  <input type="tel" class="form-control button-menu" id="inputTell" placeholder="Phone Number">
+                                  <input type="tel" name="Phone" class="form-control button-menu" id="inputTell" placeholder="Phone Number" required>
                                 </div>
                             </div>
                             <div class="form-row d-flex align-items-center">
                               <div class="form-group col-xl-5">
-                                <input type="number" class="form-control button-menu" id="inputRate" placeholder="Day Rate">
+                                <input type="number" name="Rate" class="form-control button-menu" id="inputRate" placeholder="Day Rate" required>
                               </div>
                               <div class="form-group col-xl-7 d-flex justify-content-end">
-                                    <button type="submit" class="btn btn-primary button-menu col-lg-12">Submit</button>
+                                    <button type="submit" class="btn btn-primary button-menu col-lg-12 btn-hdr-cont">Submit</button>
                                 </div>
                             </div>
-                          </form>
+                          </div>
                     </div>
                     <div class="col-xl-6 hdr-pic">
                         <div class="bg-picture d-flex justify-content-center">
@@ -148,18 +146,18 @@
             <div class="row features_row_cont text-center">
                 <div class="col-xl-4">
                     <img class="mb-4" src="img/icon-crown.svg" alt="">
-                    <h4 class="mb-3">Header</h4>
-                    <p class="h4_descriptor">Interdum et malesuada fames ac ante  primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus. </p>
+                    <h4 class="mb-3">Affiliate Programmes</h4>
+                    <p class="h4_descriptor">Discovery Insure is affiliated to the programmes. Only best programmes available for our customers. </p>
                 </div>
                 <div class="col-xl-4">
                     <img class="mb-4" src="img/icon-hand-shake.svg" alt="">
-                    <h4 class="mb-3">Header</h4>
-                    <p class="h4_descriptor">Interdum et malesuada fames ac ante  primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus. </p>
+                    <h4 class="mb-3">Service Areas</h4>
+                    <p class="h4_descriptor">Durban, East London, Johannesburg, Port Elizabeth, Pretoria, Bloemfontein, Southern Cape, Western Cape, and Nelspruit </p>
                 </div>
                 <div class="col-xl-4">
                     <img class="mb-4" src="img/icon-dolar-apple.svg" alt="">
-                    <h4 class="mb-3">Header</h4>
-                    <p class="h4_descriptor">Interdum et malesuada fames ac ante  primis in faucibus. Duis vitae sem lacus. ut eros vel libero pharetra pharetra. Praesent nec pellentesque risus. </p>
+                    <h4 class="mb-3">Booking Method</h4>
+                    <p class="h4_descriptor">Online bookings, calling in, and the in app purchase and support methods are available for our customers. </p>
                 </div>
             </div>
         </div>
@@ -191,9 +189,9 @@
     <section id="call2act">
       <div class="row call2act_row d-flex justify-content-center pb-5 pt-5">
         <div class="col-xl-5 call2act_block">
-            <h2 class="text-center">Call to action</h2>
-              <p class="h2-descriptor text-center">Mauris sed dapibus metus. Integer dictum fringilla metus, facilisis lacinia lorem  facilisis eget. Mauris auctor lacinia velit, in pretium lectus placerat nec. Nam porttitor nisi in velit   blandit ultricies. </p>
-            <button class="btn btn-primary">Learn more</button>
+            <h2 class="text-center">What is take-home pay?</h2>
+              <p class="h2-descriptor text-center">Take-home pay is the amount received after tax, insurance and other deductions have been removed from an employee’s gross monthly salary. It is also known as net pay or net salary. </p>
+            <button class="btn btn-primary btn_learn"><a href="#test-popup" data-effect="mfp-zoom-out">Learn more</a></button>
         </div>
       </div>
     </section>
@@ -297,7 +295,7 @@
     <section id="review">
       <div class="row row_review row_ttl pb-5 pt-5">
         <div class="col-xl-12 how-works_ttl">
-          <h3 class="text-center">Review</h3>
+          <h3 class="text-center">Reviews</h3>
           <p class="row_p">Our partners are in a hurry to share their opinions about us</p>
         </div>
             <div class="owl-carousel review_carusel pb-5 pt-5 text-center">
@@ -441,7 +439,7 @@
       </footer>
       <!-- HIDED ELEMENTS -->
 
-      <!-- Pop-Up -->
+      <!-- Pop-Up Contact US -->
       <div id="contact_us_popup" class="mfp-hide">
           <div class="group">      
             <input type="text" class="inpt-popup_name" name="Name" required>
@@ -456,6 +454,26 @@
             <label class="inpt-lbl">Phone</label>
           </div>
           <button class="btn btn-primary btn-send">SEND</button>
+      </div>
+      <!-- Pop-Up Tank you -->
+      <div class="alert alert-light mfp-hide" role="alert">
+        <h5 class="mb-2">Thank you!</h5>
+        <p>Thank you for your recent request submission!  Your request has been received and added to our internal tracking system for future review.</p> 
+      </div>
+
+      <div id="test-popup" class="col-xl-12 mfp-with-anim mfp-hide">
+        <h2 class="text-center">How much take-home pay should you receive?</h2>
+        <p>Take-home pay is influenced by a variety of factors, including:</p>
+          <ul>
+            <li>Income Tax</li>
+            <li>National Insurance</li>
+            <li>Personal Allowance</li>
+            <li>Student loan repayments</li>
+            <li>Pension contributions</li>
+            <li>Benefits such as childcare vouchers</li>
+            <li>Bonuses</li>
+          </ul>
+            <p>For a definitive overview of your deductions and take-home pay, you should check your tax code and contact the tax office.</p>
       </div>
 </body>
 </html>

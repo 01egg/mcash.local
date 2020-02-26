@@ -581,7 +581,9 @@ h6 {
 }
 
 /* line 108, style.scss */
-p, .card-body p, .dollar, .month, .item .review-txt, .faq_ttl, .faq_descr, .map_informer_ttl, .map_informer_sub-ttl, .map_informer_info {
+p, .card-body p, .dollar, .month, .item .review-txt, .faq_ttl, .faq_descr, .map_informer_ttl, .map_informer_sub-ttl, .map_informer_info, .alert p, #test-popup p,
+#test-popup ul,
+#test-popup li {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -1135,29 +1137,62 @@ input:focus + .highlight {
     background: transparent;
   }
 }
+/* line 701, style.scss */
+.alert {
+  width: 50%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 2px 5px #000;
+          box-shadow: 0 2px 5px #000;
+}
+
+/* line 711, style.scss */
+.alert h5 {
+  color: #000 !important;
+  text-align: center !important;
+}
+
+/* line 717, style.scss */
+.btn_learn a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* line 722, style.scss */
+#test-popup {
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* line 728, style.scss */
+#test-popup p,
+#test-popup ul,
+#test-popup li {
+  color: #fff !important;
+}
+
 @media (max-width: 1200px) {
-  /* line 703, style.scss */
+  /* line 743, style.scss */
   .hdr-pic {
     position: relative;
   }
 
-  /* line 706, style.scss */
+  /* line 746, style.scss */
   .hdr-content-ttl {
     margin: 0 auto;
   }
 
-  /* line 709, style.scss */
+  /* line 749, style.scss */
   .call2act_block p {
     margin: 1em 12em;
   }
 
-  /* line 713, style.scss */
+  /* line 753, style.scss */
   .card button {
     left: 40% !important;
   }
 }
 @media (max-width: 1100px) {
-  /* line 719, style.scss */
+  /* line 759, style.scss */
   .map_informer {
     position: inherit !important;
     left: 0;
@@ -1166,49 +1201,49 @@ input:focus + .highlight {
   }
 }
 @media (max-width: 991px) {
-  /* line 728, style.scss */
+  /* line 768, style.scss */
   .card button {
     left: 35% !important;
   }
 }
 @media (max-width: 800px) {
-  /* line 734, style.scss */
+  /* line 774, style.scss */
   .call2act_block p {
     margin: 1em 4em;
   }
 }
 @media (max-width: 767px) {
-  /* line 740, style.scss */
+  /* line 780, style.scss */
   .card button {
     left: 30% !important;
   }
 }
 @media (max-width: 600px) {
-  /* line 746, style.scss */
+  /* line 786, style.scss */
   .review_carusel .item {
     width: 400px;
   }
 }
 @media (max-width: 470px) {
-  /* line 753, style.scss */
+  /* line 793, style.scss */
   .card button {
     left: 27% !important;
   }
 }
 @media (max-width: 420px) {
-  /* line 759, style.scss */
+  /* line 799, style.scss */
   .card button {
     left: 25% !important;
   }
 }
 @media (max-width: 400px) {
-  /* line 765, style.scss */
+  /* line 805, style.scss */
   .card button {
     left: 20% !important;
   }
 }
 @media (max-width: 310px) {
-  /* line 771, style.scss */
+  /* line 811, style.scss */
   .card button {
     left: 15% !important;
   }

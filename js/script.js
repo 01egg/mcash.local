@@ -1,3 +1,4 @@
+
 (function ($) {
     $(document).ready(function () {
 
@@ -106,6 +107,18 @@
                 fbTheme: false
             });
 
+            // Условие появления Thank you window
+            $(document).ajaxStop(function(){
+                if ($('#submit_popup').hasClass('sent')) {
+                    $.magnificPopup.open({
+                        items: {
+                            src: '.alert',
+                            type: 'inline'
+                        }
+                      });
+                }
+               });
+
             $(".inpt-popup_name, .inpt-popup_phone").focus(function() {
                 $('.inpt-lbl').addClass('inpt_change');
                 $('.bar').addClass('bar1');
@@ -120,10 +133,34 @@
                     $('.bar').removeClass("bar1");
                 }
             });
+        
+        // Скрипт плавного скролла
 
-            if($("form").hasClass("sent")){
-                console.log("Привет")
-            }
+        $("#menu").on("click","a", function (event) {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+    
+            //забираем идентификатор бока с атрибута href
+            let id  = $(this).attr('href'),
+    
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+            
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top}, 1000);
+        });
+
+        $('.btn_learn').magnificPopup({
+            delegate: 'a',
+            removalDelay: 500, //delay removal by X to allow out-animation
+            callbacks: {
+              beforeOpen: function() {
+                 this.st.mainClass = this.st.el.attr('data-effect');
+              }
+            },
+            midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+          });
+            
 
     });
     })(jQuery);
