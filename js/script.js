@@ -72,16 +72,20 @@
 
         // Adaptive queries
             let viewportWidth = $(window).width();
-            if (viewportWidth < 1200) {
+            if ((viewportWidth < 1200) || ($(window).resize())) {
                     $(".hdr-content-ttl").removeClass("ml-5");
                     $(".cont-adaptive").addClass("container");
                     $(".btn-comp-plans").addClass("mt-4");
                     $(".card ").addClass("mb-5");
+                    $('.form-group_btn').removeClass('d-flex');
+                    $('.form-group_btn').removeClass('justify-content-end');
             } else {
                 $(".hdr-content-ttl").addClass("ml-5");
                 $(".cont-adaptive").removeClass("container");
                 $(".btn-comp-plans").removeClass("mt-4");
                 $(".card ").removeClass("mb-5");
+                $('.form-group_btn').addClass('d-flex');
+                $('.form-group_btn').addClass('justify-content-end');
             }
 
             // Mask
@@ -95,7 +99,7 @@
             // Pop Up
             $('#contact_us_popup').wiFeedBack({
                 fbScript: 'blocks/wi-feedback.php',
-                fbLink: '.contact_us',
+                fbLink: '.contact_us, .shop_cart_btn',
                 fbColor: false,
                 fbTheme: false
             });
@@ -112,7 +116,7 @@
                 if ($('#submit_popup').hasClass('sent')) {
                     $.magnificPopup.open({
                         items: {
-                            src: '.alert',
+                            src: '.th-popup',
                             type: 'inline'
                         }
                       });
@@ -133,10 +137,15 @@
                     $('.bar').removeClass("bar1");
                 }
             });
+
+        // Удалить lable если форма в фокусе
+        $( ".form_long-form input" ).on("focus",function() {
+            $('.form_long-form label').css('display', 'none ');
+          });
         
         // Скрипт плавного скролла
 
-        $("#menu").on("click","a", function (event) {
+        $("#menu_itms").on("click","a", function (event) {
             //отменяем стандартную обработку нажатия по ссылке
             event.preventDefault();
     
@@ -151,16 +160,32 @@
         });
 
         $('.btn_learn').magnificPopup({
-            delegate: 'a',
-            removalDelay: 500, //delay removal by X to allow out-animation
-            callbacks: {
-              beforeOpen: function() {
-                 this.st.mainClass = this.st.el.attr('data-effect');
-              }
-            },
-            midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
-          });
+            items: {
+                src: '#test-popup',
+                type: 'inline',
+                removalDelay: 500, //delay removal by X to allow out-animation
+                callbacks: {
+                    beforeOpen: function() {
+                       this.st.mainClass = this.st.el.attr('data-effect');
+                    }
+                  },
+            }
             
+            
+            
+            
+            
+            
+          });
+
+        // PopUp Plan
+        $('.btn-comp-plans').magnificPopup({
+            items: {
+                src: '.plan-popup',
+                type: 'inline'
+            }
+            });
+
 
     });
     })(jQuery);

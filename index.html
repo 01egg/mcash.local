@@ -81,11 +81,11 @@
                 <div class="col-xl-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu_itms" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
                       
-                        <div id="menu" class="collapse navbar-collapse">
+                        <div id="menu_itms" class="collapse navbar-collapse">
                           <ul class="navbar-nav ml-auto d-flex align-items-center">
                             <li class="nav-item mr-5">
                               <a class="nav-link hover-effect" href="#features">About Us</a>
@@ -120,7 +120,7 @@
                               <div class="form-group col-xl-5">
                                 <input type="number" name="Rate" class="form-control button-menu" id="inputRate" placeholder="Day Rate" required>
                               </div>
-                              <div class="form-group col-xl-7 d-flex justify-content-end">
+                              <div class="form-group form-group_btn col-xl-7 d-flex justify-content-end">
                                     <button type="submit" class="btn btn-primary button-menu col-lg-12 btn-hdr-cont">Submit</button>
                                 </div>
                             </div>
@@ -191,29 +191,31 @@
         <div class="col-xl-5 call2act_block">
             <h2 class="text-center">What is take-home pay?</h2>
               <p class="h2-descriptor text-center">Take-home pay is the amount received after tax, insurance and other deductions have been removed from an employee’s gross monthly salary. It is also known as net pay or net salary. </p>
-            <button class="btn btn-primary btn_learn"><a href="#test-popup" data-effect="mfp-zoom-out">Learn more</a></button>
+            <button class="btn btn-primary btn_learn" data-effect="mfp-zoom-out">Learn more</button>
         </div>
       </div>
     </section>
     <section id="form_long">
       <div class="cont-adaptive">
       <div class="row form_lone_row d-flex justify-content-center pt-5 pb-5">
-        <div class="col-xl-8 offset-xl-2">
+        <div class="col-xl-12 offset-xl-2">
           <form class="form_long-form">
             <div class="row d-flex align-items-end pb-5 pt-5">
-              <div class="col-xl-3">
+              <div class="col-xl-4">
                 <label for="number-employ">Number of employees</label>
-                <input type="text" class="form-control button-menu" id="number-employ">
+                <input type="number" class="form-control button-menu" id="number-employ">
               </div>
-              <div class="col-xl-3">
+              <div class="col-xl-4">
                 <label for="number-employ">For the payroll, I use</label>
-                <select class="custom-select button-menu form-arrow" id="validationDefault04" required>
-                  <option></option>
-                  <option></option>
+                <select class="custom-select button-menu form-arrow" id="validationDefault04">
+                  <option selected disabled></option>
+                  <option value="Cash">Cash</option>
+                  <option value="Cart">Cart</option>
+                  <option value="Bank account">Bank account</option>
                 </select>
               </div>
               <div class="col-xl-4">
-                <button type="submit" class="btn btn-primary btn-comp-plans">Compare plans</button>
+                <button class="btn btn-primary btn-comp-plans">Compare plans</button>
               </div>
             </div>
           </form>
@@ -233,7 +235,7 @@
           <div class="col-xl-4">
             <div class="card">
               <div class="card-title_container mt-4">
-                <h6 class="card-title text-center">Tier 1</h6>
+                <h6 class="card-title text-center">Light</h6>
               </div>
               <div class="card-body">
                 <p class="card-text"><span class="dollar">$</span> 11.99 <span  class="month">/ month</span></p>
@@ -242,34 +244,34 @@
                     <path fill-rule="evenodd"  stroke="rgb(63, 114, 175)" stroke-width="1px" stroke-dasharray="10, 10, 10"     stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M0.500,0.499 L310.500,0.499 "/>
                   </svg>
               <ul class="list-group list-group-flush text-center mt-3 pb-4">
-                <li class="list-group-item">Some option number 1</li>
-                <li class="list-group-item">Some option number 2</li>
-                <li class="list-group-item">Some option number 3</li>
-                <li class="list-group-item">Some option number 4</li>
-                <li class="list-group-item pb-5">Some option number 5</li>
+                <li class="list-group-item">Send 5 invoices and quotes</li>
+                <li class="list-group-item">Enter 5 bills</li>
+                <li class="list-group-item">Reconcile bank transactions</li>
+                <li class="list-group-item">Multi-currency</li>
+                <li class="list-group-item pb-5">Support 24/7</li>
               </ul>
-              <button class="btn btn-primary ">Choose</button>
+              <button class="btn btn-primary shop_cart_btn">Choose</button>
             </div>
           </div>
           <div class="col-xl-4 pb-5">
             <div class="card card-right">
               <div class="card-title_container mt-4">
-                <h6 class="card-title text-center">Tier 1</h6>
+                <h6 class="card-title text-center">Basic</h6>
               </div>
               <div class="card-body">
-                <p class="card-text"><span class="dollar">$</span> 11.99 <span  class="month">/ month</span></p>
+                <p class="card-text"><span class="dollar">$</span> 22.99 <span  class="month">/ month</span></p>
               </div>
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="311.5px"    height="2.5px">
                     <path fill-rule="evenodd"  stroke="rgb(17, 45, 78)" stroke-width="1px" stroke-dasharray="10, 10, 10"     stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M0.500,0.499 L310.500,0.499 "/>
                   </svg>
               <ul class="list-group list-group-flush text-center mt-3 pb-4">
-                <li class="list-group-item">Some option number 1</li>
-                <li class="list-group-item">Some option number 2</li>
-                <li class="list-group-item">Some option number 3</li>
-                <li class="list-group-item">Some option number 4</li>
-                <li class="list-group-item pb-5">Some option number 5</li>
+                <li class="list-group-item">Send invoices and quotes</li>
+                <li class="list-group-item">Enter bills</li>
+                <li class="list-group-item">Reconcile bank transactions</li>
+                <li class="list-group-item">Multi-currency</li>
+                <li class="list-group-item pb-5">Support 24/7</li>
               </ul>
-              <button class="btn btn-primary ">Choose</button>
+              <button class="btn btn-primary shop_cart_btn">Choose</button>
             </div>
           </div>
         </div>
@@ -301,22 +303,22 @@
             <div class="owl-carousel review_carusel pb-5 pt-5 text-center">
               <div class="item mt-3 mb-3">
                   <div class="review_quotes">,,</div>
-                  <p class="review-txt">Fusce faucibus euismod nisl non fringilla. Integer semper dui justo, quis cursus mi tempus in. Sed pretium diam ex, non convallis magna pretium vel. Maecenas semper augue vel</p>
+                  <p class="review-txt"><br>“Excellent quick professional service very polite managers” </p>
                   <p class="review-sign">Sahara Reeves</p>
               </div>
               <div class="item mt-3 mb-3">
                   <div class="review_quotes">,,</div>
-                  <p class="review-txt">Etiam hendrerit malesuada vestibulum. Nunc sed tortor enim. Suspendisse ultrices elit  ut elit scelerisque, sit amet pharetra felis viverra. Morbi ultricies orci augue, a efficitur risus</p>
+                  <p class="review-txt">“I love it here. Fast,smooth transactions best fees around. Mcash is the company by which all should be measured”</p>
                   <p class="review-sign">Samirah Mckeown</p>
               </div>
               <div class="item mt-3 mb-3">
                   <div class="review_quotes">,,</div>
-                  <p class="review-txt">Sed sed posuere urna, et dignissim ex. Mauris sit amet ultrices orci, ut fermentum dui. Nulla ut efficitur leo, at efficitur magna. Vestibulum ante ipsum primis</p>
+                  <p class="review-txt"><br>“Great service to measure everything and give feedback about fees” </p>
                   <p class="review-sign">John Smith</p>
               </div>
               <div class="item mt-3 mb-3">
                   <div class="review_quotes">,,</div>
-                  <p class="review-txt">Fusce volutpat ex ac magna aliquet porta. Donec fermentum pretium tellus, et consequat leo blandit eu. Mauris varius felis massa, bibendum egestas risus vehicula et.</p>
+                  <p class="review-txt"><br>“A week since order of 400+ and still happy. In contact with support. Stay cool!!!!!” </p>
                   <p class="review-sign">Patrick Wilson</p>
           </div>
         </div>
@@ -331,30 +333,30 @@
         </div>
         <div class="col-xl-5 ml-5 mt-5 mb-5">
           <div class="faq_cont">
-            <p class="faq_ttl">Maecenas fringilla ante metus?</p>
-            <p class="faq_descr">Vestibulum eget feugiat nisl, aliquet ultrices nisi. Suspendisse quis nulla massa. Nunc eleifend mi nec molestie aliquam. Nulla turpis nunc, commodo a est id, pretium convallis sem. Praesent faucibus et neque at blandit. Quisque eget tincidunt enim, eget tempor ex.</p>
+            <p class="faq_ttl">Why Basic vs. Light?</p>
+            <p class="faq_descr">Monthly accounting services provide substantially more value than only an annual service. If an accountant only sees your numbers once a year, it is too late to offer advice that would have helped to make that year more profitable.</p>
           </div>
           <div class="faq_cont faq_last-left">
-            <p class="faq_ttl">Phasellus tellus urna, malesuada vel est sit amet?</p>
-            <p class="faq_descr">Sed ultricies eget velit quis dictum. Nulla finibus pellentesque arcu in rutrum. Maecenas ipsum lorem, lobortis maximus cursus nec, hendrerit volutpat sem. Nam rutrum sed dolor eget fringilla. Vestibulum erat velit, tincidunt eu ullamcorper in, hendrerit sed nunc.</p>
+            <p class="faq_ttl">Is my current payroll firm providing quality service?</p>
+            <p class="faq_descr">If you’re deciding whether or not to switch payroll providers, consider this checklist for evaluating payroll services.</p>
           </div>
           <div class="faq_cont faq_hid-left">
-            <p class="faq_ttl">Left</p>
-            <p class="faq_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae facere at quam? Quae eos autem sed similique, sint minus.</p>
+            <p class="faq_ttl">Transition from in-house to outsourced accounting?</p>
+            <p class="faq_descr">Transitions are tricky, but preparing your business to switch to an outsourced accountant doesn’t have to be hard. Make your new financial partner is a good fit, plan ahead and be sure to budget enough time, set goals, and be mindful of potential obstacles.</p>
           </div>
         </div>
         <div class="col-xl-5 ml-5 mt-5 mb-5">
           <div class="faq_cont">
-            <p class="faq_ttl">Duis justo diam, rutrum non dignissim?</p>
+            <p class="faq_ttl">What do clients need to provide payroll?</p>
             <p class="faq_descr">Sed quis urna quam. Fusce vitae hendrerit purus. Donec aliquam justo sed vulputate porttitor. Integer laoreet lacinia odio id finibus. Proin mi libero, accumsan nec mauris nec, malesuada auctor orci. Mauris aliquet convallis eros, id ultrices mi sodales vel.</p>
           </div>
           <div class="faq_cont faq_last-right">
-            <p class="faq_ttl">Cras leo nulla, lacinia non suscipit sed, scelerisque nisi?</p>
-            <p class="faq_descr">Fusce volutpat ex ac magna aliquet porta. Donec fermentum pretium tellus, et consequat leo blandit eu. Mauris varius felis massa, bibendum egestas risus vehicula et. Fusce faucibus euismod nisl non fringilla. Integer semper dui justo, quis cursus mi tempus in. </p>
+            <p class="faq_ttl">What do your payroll processes look like?</p>
+            <p class="faq_descr">After you provide us with the basic information, we do the rest. Everything is scheduled electronically for direct deposit accounts or we provide you with checks. We automatically calculate and schedule payroll taxes.  </p>
           </div>
           <div class="faq_cont faq_hid-right">
-            <p class="faq_ttl">Right</p>
-            <p class="faq_descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod porro eius, ullam pariatur ipsum itaque velit reiciendis ea cum alias.</p>
+            <p class="faq_ttl">How does better accounting affect my bottom line?</p>
+            <p class="faq_descr">Many small- and mid-size businesses fail to adequately measure and manage their finances, even though poor financial management is a major cause of business failure.</p>
           </div>
         </div>
         <div class="col-xl-12 pb-5">
@@ -393,21 +395,21 @@
           <div class="row footer_row pb-4 pt-5 no-gutters d-flex justify-content-center">
             <div class="col-xl-4">
               <img src="img/logo_foot.png" alt="">
-              <p class="footer_txt mt-4">Praesent varius feugiat dolor, a pulvinar leo facilisis blandit. Sed quis lobortis mauris, et lacinia justo. Sed sollicitudin risus consequat pulvinar efficitur. Praesent ac augue in lorem laoreet bibendum. Vestibulum mattis accumsan nulla eget sagittis.</p>
+              <p class="footer_txt mt-4">M-Cash company has a long history in the Twin Cities. Our experienced team of accountants, bookkeepers, payroll specialists, and marketing professionals have a deep understanding of the business climate in the Twin Cities area and take pride in helping businesses and individuals thrive.</p>
             </div>
             <div class="col-xl-2">
               <p class="footer_txt-hdr">Documents</p>
               <ul class="footer_links">
-                <li class="footer_txt"><a href="#">Privacy policy</a></li>
-                <li class="footer_txt"><a href="#">Terms and conditions</a></li>
+                <li class="footer_txt"><a href="/img/pp.pdf" target="_blank">Privacy policy</a></li>
+                <li class="footer_txt"><a href="/img/tc.pdf" target="_blank">Terms and conditions</a></li>
               </ul>
             </div>
             <div class="col-xl-2">
               <p class="footer_txt-hdr">Menu</p>
               <ul class="footer_links">
-                <li class="footer_txt"><a href="#">About Us</a></li>
-                <li class="footer_txt"><a href="#">Resources</a></li>
-                <li class="footer_txt"><a href="#">Contact Us</a></li>
+                <li class="footer_txt"><a href="#features">About Us</a></li>
+                <li class="footer_txt"><a href="#how-works">How it works</a></li>
+                <li class="footer_txt"><a href="#contact_us_popup" class="cnt_us_buttom">Contact Us</a></li>
               </ul>
             </div>
             <div class="col-xl-2">
@@ -420,8 +422,8 @@
             <div class="col-xl-2">
                 <p class="footer_txt-hdr">Follow Us</p>
               <div class="footer_icons">
-                <img src="img/fb.svg" alt="">
-                <img src="img/ln.svg" alt="">
+                <a href="https://www.facebook.com/mcashormoc19"><img src="img/fb.svg" alt=""></a>
+                <a href="https://www.linkedin.com/company/mcash"><img src="img/ln.svg" alt=""></a>
               </div>
             </div>
           </div>
@@ -437,6 +439,7 @@
           </div>
         </div>
       </footer>
+      
       <!-- HIDED ELEMENTS -->
 
       <!-- Pop-Up Contact US -->
@@ -455,12 +458,14 @@
           </div>
           <button class="btn btn-primary btn-send">SEND</button>
       </div>
+      
       <!-- Pop-Up Tank you -->
-      <div class="alert alert-light mfp-hide" role="alert">
+      <div class="alert th-popup alert-light mfp-hide" role="alert">
         <h5 class="mb-2">Thank you!</h5>
         <p>Thank you for your recent request submission!  Your request has been received and added to our internal tracking system for future review.</p> 
       </div>
-
+      
+      <!-- Learn More PopUp -->
       <div id="test-popup" class="col-xl-12 mfp-with-anim mfp-hide">
         <h2 class="text-center">How much take-home pay should you receive?</h2>
         <p>Take-home pay is influenced by a variety of factors, including:</p>
@@ -474,6 +479,12 @@
             <li>Bonuses</li>
           </ul>
             <p>For a definitive overview of your deductions and take-home pay, you should check your tax code and contact the tax office.</p>
+      </div>
+
+      <!-- Pop-Up Plan -->
+      <div class="alert plan-popup alert-light mfp-hide" role="alert">
+        <h5 class="mb-2">Thank you!</h5>
+        <p>Best plan for you is <span>basic</span></p> 
       </div>
 </body>
 </html>
